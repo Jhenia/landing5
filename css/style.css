@@ -404,12 +404,13 @@ body.locked {
 }
 
 .nav.active {
-  -webkit-transform: translateX(0px);
-      -ms-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: 0.2s ease;
-  -o-transition: 0.2s ease;
-  transition: 0.2s ease;
+  width: 100vw !important;
+  -webkit-transform: translateX(0px) !important;
+      -ms-transform: translateX(0px) !important;
+          transform: translateX(0px) !important;
+  -webkit-transition: 0.2s ease !important;
+  -o-transition: 0.2s ease !important;
+  transition: 0.2s ease !important;
   opacity: 1 !important;
   scale: 1 !important;
 }
@@ -481,7 +482,7 @@ body.locked {
 }
 
 .nav {
-  width: 100vw;
+  width: 0px;
   height: 100vh;
   right: 0px;
   bottom: 0px;
