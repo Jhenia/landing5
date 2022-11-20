@@ -408,9 +408,9 @@ body.locked {
   -webkit-transform: translateX(0px) !important;
       -ms-transform: translateX(0px) !important;
           transform: translateX(0px) !important;
-  -webkit-transition: 0.2s ease !important;
-  -o-transition: 0.2s ease !important;
-  transition: 0.2s ease !important;
+  -webkit-transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92) !important;
+  -o-transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92) !important;
+  transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92) !important;
   opacity: 1 !important;
   scale: 1 !important;
 }
@@ -482,15 +482,15 @@ body.locked {
 }
 
 .nav {
-  width: 0px;
+  width: 50vw;
   height: 100vh;
   right: 0px;
   bottom: 0px;
   top: 0px;
   border-radius: 0;
-  -webkit-transition: 0.2s cubic-bezier(0.6, 0.15, 1, 0.75);
-  -o-transition: 0.2s cubic-bezier(0.6, 0.15, 1, 0.75);
-  transition: 0.2s cubic-bezier(0.6, 0.15, 1, 0.75);
+  -webkit-transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92);
+  -o-transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92);
+  transition: 0.2s cubic-bezier(0.48, 0.48, 0.94, 0.92);
   position: fixed;
   z-index: 20;
   background: #000;
