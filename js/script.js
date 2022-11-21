@@ -9,8 +9,49 @@ let header__burger = document.querySelector('.burger');
       header_menu.classList.toggle('active');
       back.classList.toggle('locked');
   }
-//Header burger   
-
+//Header burger  
+ 
+// modal form
+$('.button').click(function () {
+      var buttonId = $(this).attr('id');
+      $('body').addClass('locked');
+      $('#modal-container').removeAttr('class').addClass(buttonId);
+      $('#modal-container').removeClass('hide');
+      $('.modal-background').addClass('opened');
+    
+    })
+    
+    $('.modal-background').click(function () {
+      $('#modal-container').addClass('out');
+      $('body').removeClass('modal-active');
+      $('.modal-background').removeClass('opened');
+      $('body').removeClass('locked');
+    });
+    $('.modal-background').on('click', (e) => {
+     
+      setTimeout(() => {
+            $('.modal__box1').removeClass('remove');
+            $('.modal__box2').removeClass('show');
+          $('#modal-container').addClass('hide');
+      }, 500);
+    });
+    $('.modal__close').click(function () {
+      $('.showblock').removeClass('Show');
+      $('#modal-container').addClass('out');
+      $('body').removeClass('modal-active');
+      $('.modal-background').removeClass('opened');
+      $('body').removeClass('locked');
+    });
+    $('.modal__close').on('click', (e) => {
+   
+      $('.showblock_background').removeClass('Show_bg');
+      setTimeout(() => {
+            $('.modal__box1').removeClass('remove');
+            $('.modal__box2').removeClass('show');
+          $('#modal-container').addClass('hide');
+      }, 500);
+    });
+    
 $('.form').submit(function (e) {
       let show = document.querySelector(".form__btn");
       let section = document.querySelector(".form");
@@ -27,7 +68,7 @@ $('.form').submit(function (e) {
 
                   show.classList.remove('change');
                   show.textContent = show.textContent.replace('Успішно надіслано', 'Надіслати');
-            }, 2000);
+            }, 3000);
             $('body').addClass('overlock');
             //Если все графы заполнены, то показываем popup
 
@@ -49,13 +90,13 @@ $('.form2').submit(function (e) {
             show.classList.toggle("change");
 
 
-            show.textContent = show.textContent.replace('Консультація', 'Успішно надіслано');
+            show.textContent = show.textContent.replace('Надіслати', 'Успішно надіслано');
             setTimeout(function () {
 
 
                   show.classList.remove('change');
-                  show.textContent = show.textContent.replace('Успішно надіслано', 'Консультація');
-            }, 2000);
+                  show.textContent = show.textContent.replace('Успішно надіслано', 'Надіслати');
+            }, 3000);
             $('body').addClass('overlock');
             //Если все графы заполнены, то показываем popup
 
@@ -88,28 +129,7 @@ document.addEventListener('click', function (event) {
             $('.language-select').removeClass('open');
       }
 });
-// next word     
-function nextMsg(i) {
-      if (messages.length == i) {
-            i = 0;
-      }
-      $('#message').html(messages[i]).fadeIn(500).delay(1000).fadeOut(500, function () {
-            nextMsg(i + 1);
-      });
-};
 
-var messages = [
-      "Back-end!",
-      "Front-end",
-      "Mobile developers",
-      "DevOps",
-      "UI/UX Design",
-       "Tester"
-];
-
-$('#message').hide();
-
-nextMsg(0);
 
 // menu
 // scrollToLink
@@ -134,3 +154,30 @@ document.addEventListener("click", e => {
       $('.nav').removeClass('active');
       $('body').removeClass('locked');
     }
+// form modal
+$('.form3').submit(function (e) {
+      let modal__box1 = document.querySelector(".modal__box1");
+      let modal__box2 = document.querySelector(".modal__box2");
+      let section = document.querySelector(".form3");
+      var empty = $(this).parent().find("input").filter(function () {
+            return this.value === "";
+      });
+      if (!empty.length) {
+            modal__box1.classList.toggle("remove");
+            modal__box2.classList.toggle("show");
+
+
+           
+            $('body').addClass('overlock');
+            //Если все графы заполнены, то показываем popup
+
+
+            //очищаем все данные текстовых полей, кроме кнопок
+            $('form input').not(':button, :submit').val('');
+
+      }
+      e.preventDefault();
+});
+
+
+
