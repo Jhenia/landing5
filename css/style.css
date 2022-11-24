@@ -1764,6 +1764,12 @@ body.modal-active {
   color: rgba(0, 0, 0, 0.8);
 }
 
+.form__title input {
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .questions {
   background: #000000;
   padding: 120px 0px;
