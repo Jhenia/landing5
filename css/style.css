@@ -718,6 +718,9 @@ body.locked {
 }
 
 .form2__box input {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   outline: none;
   border: none;
   background: none;
@@ -1990,23 +1993,42 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: #fff;
 }
 
+.form2__box input {
+  border-radius: 0 !important;
+}
+
 .form2__box input::-moz-placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .form2__box input:-ms-input-placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .form2__box input::-webkit-input-placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .form2__box input::-ms-input-placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .form2__box input::placeholder {
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.6) !important;
 }
 
