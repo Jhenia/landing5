@@ -3158,3 +3158,12 @@ a {
     line-height: 40px;
   }
 }
+
+@media only screen and (max-height: 500px) and (min-height: 100px) {
+  .modal {
+    overflow-y: auto;
+    height: 100%;
+    min-height: 370px;
+    padding-bottom: 100px;
+  }
+}
