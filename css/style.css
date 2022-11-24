@@ -2281,11 +2281,12 @@ a {
   }
 
   .first__wrapper {
-    margin-left: 0;
+    margin-left: 20px;
   }
 
   .carousel {
-    right: -13px;
+    right: auto;
+    left: 370px;
     gap: 40px;
   }
 
