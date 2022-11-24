@@ -2545,8 +2545,8 @@ a {
     }
 
     100% {
-      -webkit-transform: translateX(700px) skewX(30deg) scaleX(1);
-              transform: translateX(700px) skewX(30deg) scaleX(1);
+      -webkit-transform: translateX(900px) skewX(30deg) scaleX(1.3);
+              transform: translateX(900px) skewX(30deg) scaleX(1.3);
     }
 }
 
@@ -2562,8 +2562,8 @@ a {
     }
 
     100% {
-      -webkit-transform: translateX(700px) skewX(30deg) scaleX(1);
-              transform: translateX(700px) skewX(30deg) scaleX(1);
+      -webkit-transform: translateX(900px) skewX(30deg) scaleX(1.3);
+              transform: translateX(900px) skewX(30deg) scaleX(1.3);
     }
 }
 
