@@ -1047,6 +1047,11 @@ body.locked {
   }
 }
 
+.nav__container {
+  overflow-y: auto;
+  padding-bottom: 80px;
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2245,6 +2250,14 @@ a {
   }
 }
 
+@media only screen and (max-width: 1440px) and (min-width: 1351px) {
+  .carousel {
+    gap: 40px;
+    left: 490px;
+    right: auto;
+  }
+}
+
 @media only screen and (max-width: 1350px) and (min-width: 1024px) {
   .first__title {
     font-size: 60px;
@@ -2406,9 +2419,12 @@ a {
     padding: 0 40px;
   }
 
+  .nav__container {
+    padding-bottom: 50px !important;
+  }
+
   .nav.active {
     overflow-y: auto;
-    padding-bottom: 40px;
   }
 
   .nav__menu {
@@ -3133,6 +3149,7 @@ a {
   }
 
   .carousel {
+    left: 0;
     min-width: 260px;
     top: 109px;
     display: -webkit-box;
